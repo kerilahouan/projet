@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <!-- Lien vers le fichier CSS de Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #f8b400, #f06c64); /* Dégradé de fond */
+        }
+        .hero-section {
+            background: rgba(255, 255, 255, 0.8); /* Fond légèrement transparent */
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .hero-title {
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .hero-subtitle {
+            font-family: 'Verdana', sans-serif;
+            color: #34495e;
+        }
+        .btn-custom {
+            background-color: #f06c64;
+            color: white;
+            border: none;
+        }
+        .btn-custom:hover {
+            background-color: #e74c3c;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="hero-section text-center col-12 col-md-6">
+            <h1 class="hero-title display-3">Bienvenue sur ce site</h1>
+              
+            <p class="hero-subtitle lead">Nous sommes ravis de vous avoir avec nous !</p>
+              
+            <a href="page1.html" class="btn btn-custom btn-lg mt-4" aria-label="Explorer maintenant sur notre site">Explorer maintenant</a>
+
+        </div>
+    </div>
+
+    <!-- Lien vers le fichier JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

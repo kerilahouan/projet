@@ -1,0 +1,54 @@
+/* Liste */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ffe3e3, #ffb6b6); /* Dégradé de rose pâle à rose plus foncé */
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .list-title {
+    color: #2a9df4;
+    text-decoration: underline;
+  }
+  
+  .retrait {
+    padding-left: 40px;
+  }
+  
+  .pas_de_retrait {
+    padding-left: 0;
+    list-style-position: inside;
+  }
+  
+  .cercle {
+    list-style-type: circle;
+  }
+  
+  .carre {
+    list-style-type: square;
+  }
+  
+  .rien {
+    list-style-type: none;
+  }
+  
+  .commence_a_zero {
+    list-style-type: decimal-leading-zero;
+  }
+  
+  .lettres_minuscules {
+    list-style-type: lower-alpha;
+  }
+  
+  .chiffres_romains {
+    list-style-type: upper-roman;
+  }
+  
+  .lettres_grecques {
+    list-style-type: lower-greek;
+  }
+  
+  h2 {
+    text-indent: 20px;
+    font-family: 'Roboto', Arial, Verdana, "Times New Roman", serif;
+  }

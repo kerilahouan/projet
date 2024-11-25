@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page5</title>
+
+    <!-- Lien vers le CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Style général du body */
+        body {
+            background-color: #f4f4f9;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+
+        /* Conteneur principal */
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        /* Titres des sections */
+        h2 {
+            font-size: 1.8rem;
+            color: #343a40;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Style des tableaux */
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        .table th, .table td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        /* Style des en-têtes des tableaux */
+        .table th {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+        }
+
+        .table tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        .table tbody tr:nth-child(even) {
+            background-color: #e9ecef;
+        }
+
+        /* Classe pour ligne verte */
+        .green-bg {
+            background-color: rgb(118, 233, 11); /* Couleur verte */
+        }
+
+        /* Classe pour ligne rouge */
+        .red-bg {
+            background-color: rgb(247, 8, 8); /* Couleur rouge */
+        }
+
+        /* Classe pour ligne jaune */
+        .yellow-bg {
+            background-color: rgb(229, 233, 11); /* Couleur jaune */
+        }
+
+        /* Style des boutons personnalisés */
+        .btn-custom {
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Boutons avec couleurs spécifiques */
+        .btn-yellow {
+            background-color: rgb(225, 233, 11);
+            color: black;
+            border: none;
+        }
+
+        .btn-yellow:hover {
+            background-color: rgb(255, 255, 0);
+            cursor: pointer;
+        }
+
+        .btn-red {
+            background-color: rgb(247, 8, 8);
+            color: white;
+            border: none;
+        }
+
+        .btn-red:hover {
+            background-color: rgb(255, 0, 0);
+            cursor: pointer;
+        }
+
+        .btn-green {
+            background-color: rgb(118, 233, 11);
+            color: black;
+            border: none;
+        }
+
+        .btn-green:hover {
+            background-color: rgb(0, 255, 0);
+            cursor: pointer;
+        }
+
+        /* Améliorer l'apparence du tableau récapitulatif */
+        .table-recap {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .table-recap th {
+            background-color: #17a2b8;
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        .table-recap td {
+            background-color: #f1f1f1;
+            color: #333;
+        }
+
+        /* Améliorer l'apparence des liens */
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+
+        /* Style des colonnes de tableau supplémentaires */
+        .table td {
+            font-size: 1rem;
+        }
+
+        /* Spacing entre les éléments du tableau */
+        .table th, .table td {
+            padding: 15px;
+        }
+
+        /* Animation douce sur survol des tableaux */
+        .table tbody tr:hover {
+            background-color: #d3d3d3;
+            transition: background-color 0.3s;
+        }
+
+        /* Style des formulaires et inputs (si nécessaire dans le futur) */
+        input, select, textarea {
+            font-size: 1rem;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        /* Styling pour les alertes de message si nécessaire */
+        .alert {
+            font-size: 1rem;
+            border-radius: 5px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .alert-success {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .alert-danger {
+            background-color: #dc3545;
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+
+    <div class="container my-5">
+        <!-- Tableau des passagers -->
+        <h2 class="text-center mb-4">ETUDIANT DE PIGIER BENIN</h2>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Contact</th>
+                    <th>Statut</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="yellow-bg">
+                    <td>Carmen</td>
+                    <td>Romain</td>
+                    <td>12213243</td>
+                    <td>Redoublant <button class="btn btn-yellow btn-custom">☻</button></td>
+                </tr>
+                <tr class="red-bg">
+                    <td>Michelle</td>
+                    <td>Joinelle</td>
+                    <td>41236552</td>
+                    <td>Abandon <button class="btn btn-red btn-custom">☻</button></td>
+                </tr>
+                <tr class="green-bg">
+                    <td>Martine</td>
+                    <td>Majoie</td>
+                    <td>85966326</td>
+                    <td>Nouveau <button class="btn btn-green btn-custom">☻</button></td>
+                </tr>
+                <tr class="red-bg">
+                    <td>Jonathan</td>
+                    <td>Elioth</td>
+                    <td>78858659</td>
+                    <td>Abandon <button class="btn btn-red btn-custom">☻</button></td>
+                </tr>
+                <tr class="green-bg">
+                    <td>Xu</td>
+                    <td>Mi</td>
+                    <td>45755742</td>
+                    <td>Nouveau <button class="btn btn-green btn-custom">☻</button></td>
+                </tr>
+                <tr class="red-bg">
+                    <td>Lina</td>
+                    <td>Doumbia</td>
+                    <td>65423458</td>
+                    <td>Abandon <button class="btn btn-red btn-custom">☻</button></td>
+                </tr>
+                <tr class="yellow-bg">
+                    <td>Aminata</td>
+                    <td>Sarr</td>
+                    <td>13245678</td>
+                    <td>Redoublant <button class="btn btn-yellow btn-custom">☻</button></td>
+                </tr>
+                <tr class="green-bg">
+                    <td>Rachid</td>
+                    <td>Ouédraogo</td>
+                    <td>34987632</td>
+                    <td>Nouveau <button class="btn btn-green btn-custom">☻</button></td>
+                </tr>
+                <tr class="red-bg">
+                    <td>Fatoumata</td>
+                    <td>Diallo</td>
+                    <td>45561234</td>
+                    <td>Abandon <button class="btn btn-red btn-custom">☻</button></td>
+                </tr>
+                <tr class="yellow-bg">
+                    <td>Karim</td>
+                    <td>Ben</td>
+                    <td>88934567</td>
+                    <td>Redoublant <button class="btn btn-yellow btn-custom">☻</button></td>
+                </tr>
+                <tr class="green-bg">
+                    <td>Aly</td>
+                    <td>Diouf</td>
+                    <td>12356789</td>
+                    <td>Nouveau <button class="btn btn-green btn-custom">☻</button></td>
+                </tr>
+                <tr class="red-bg">
+                    <td>Jules</td>
+                    <td>Gomes</td>
+                    <td>45677890</td>
+                    <td>Abandon <button class="btn btn-red btn-custom">☻</button></td>
+                </tr>
+                <tr class="yellow-bg">
+                    <td>Isaac</td>
+                    <td>Diop</td>
+                    <td>98765432</td>
+                    <td>Redoublant <button class="btn btn-yellow btn-custom">☻</button></td>
+                </tr>
+                <tr class="green-bg">
+                    <td>Marie</td>
+                    <td>Joseph</td>
+                    <td>56123498</td>
+                    <td>Nouveau <button class="btn btn-green btn-custom">☻</button></td>
+                </tr>
+                <tr class="red-bg">
+                    <td>Ousmane</td>
+                    <td>Kouadio</td>
+                    <td>70893241</td>
+                    <td>Abandon <button class="btn btn-red btn-custom">☻</button></td>
+                </tr>
+                <tr class="yellow-bg">
+                    <td>Lucie</td>
+                    <td>N'Guessan</td>
+                    <td>94567801</td>
+                    <td>Redoublant <button class="btn btn-yellow btn-custom">☻</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Lien vers le JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

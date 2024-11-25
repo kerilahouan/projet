@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        iframe {
+            border: none;
+        }
+        .top-frame {
+            height: 30%;
+        }
+        .bottom-frame {
+            flex: 1;
+            display: flex;
+        }
+        .left-frame {
+            width: 30%;
+        }
+        .right-frame {
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Frame du haut -->
+    <iframe class="top-frame" src="bienvenu.html"></iframe>
+
+    <!-- Frames du bas -->
+    <div class="bottom-frame">
+        <iframe class="left-frame" src="Menu.html"></iframe>
+        <iframe class="right-frame" src="acceuil.html" name="X"></iframe>
+    </div>
+</body>
+</html>
